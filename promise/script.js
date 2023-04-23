@@ -1,13 +1,19 @@
 let a=new Promise((resolve,reject)=>{
-//resolve('1')
-reject(1)
+resolve('a resolved ')
+//reject(1)
 })
- 
+ let b=new Promise((resolve,reject)=>{
+    //resolve('1')
+    reject(2)
+    })
 
 a.then(function(data){
-    console.log("resovle=>",data)
-}).catch((err)=>console.log("reject=>",err)
-).fullfil()
+    console.log("a resovle=>",data)
+}).catch((err)=>console.log("a reject=>",err)
+)
 
-
+b.then(function(data){
+    console.log("b resovle=>",data)
+}).catch((err)=>console.log(" b reject=>",err)
+)
 
