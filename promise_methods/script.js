@@ -49,6 +49,8 @@ promise_all.then((value)=>{
     console.log(value)
 }) */
 
+
+//it give output of p2 because it is the vlue first compare to all three 
 let promise_all=Promise.any([p1,p2,p3,p4])
 promise_all.then((value)=>{
     console.log(value)
