@@ -25,9 +25,7 @@ function cta(){
     the below given code .then() is to get resolve from promise but if bot are resolve at same time
     non of them are not going to wait to complete.means it is not going to complete one by one it will
     start at same time and who has a less time they will complete first and who has more time they will
-    complete last.     
-    bangloreweather.then((x)=>{alert(x)})
-    chitradurgaeweather.then((x)=>{alert(x)}) */
+    complete last.      */
  
     /* the below given code says that
     untill the bngw compete its asynchrons task it will not go to another asynchronsu opration,
