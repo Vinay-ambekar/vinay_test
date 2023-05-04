@@ -22,7 +22,7 @@ While you were waiting for the promise to be fulfilled (confirmation of ingredie
  in a clear and efficient way.
 */
 //nested promise
-/* const a = (x, y) => {
+const a = (x, y) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(x * y);
@@ -37,48 +37,36 @@ While you were waiting for the promise to be fulfilled (confirmation of ingredie
         console.log(mul1);
         return a(mul1, 5).then((mul2) => {
           console.log("end of nested promis=>"+ mul2);
-          return a(mul2,5)
+          //return a(mul2,5)
         });
       });
     })
     .catch((error) => {
       console.error(error);
     });
-   */
+  
 
 //promise chaining do to avoid nested promise
-console.log("start")
-const b=new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        resolve(1)
-    },5000)
+/* console.log("start");
+const b = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve(1);
+  }, 5000);
 })
-.then((result)=>{
+  .then(function (result) {
+    console.log(result);
+    return result * 4;
+  })
+  .then(function (result1) {
+    console.log(result1);
+    return result1 * 4;
+  })
+  .then(function (result2) {
+    console.log(result2);
+  })
+  .catch(function (error) {
+    console.error(error);
+  });
 
-    console.log("\n\nstart of chanin pormise =>"+ result)
-    return result*4
-})
-.then((result)=>{
-    console.log(result)
-    return result*4
-})
-.then((result)=>{
-    console.log(result)
-    return result*4
-})
-.then((result)=>{
-    console.log(reult)
-    return result*4
-})
-.then((result)=>{
-    console.log(result)
-    return result*4
-})
- .catch(err=>{
-    console.log("error occur=> " + err)
-}) 
-console.log("end") 
+console.log("end")  */
 
-/* Promise.all([a(),b]).then((values)=>{
-    console.log(values)
-}) */                                                                                                                      
