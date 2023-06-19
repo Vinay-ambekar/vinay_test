@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operators</title>
+</head>
+
+<body>
+    <h2>operators</h2>
+    <ul>
+        <li>Arithematic Operators</li>
+        <li>Assignment Operators</li>
+        <li>comparison Operators</li>
+        <li>Logical Operators</li>
+    </ul>
+    <h2>comparison Operators</h2>
+    <ul>
+        <li>'==' :equal to </li>
+        <li>'===' :eual value and type</li>
+        <li>'!=' :not equal</li>
+        <li>'!==' :not equal value or not equal type</li>
+    </ul>
+    <script>
+        console.log('logical operator &&')
+        let x = 5;
+        let y = 10;
+
+        if (x > 0 && y < 20) {
+            console.log("Both conditions are true");
+        } else {
+            console.log("At least one condition is false");
+        }
+        console.log('logical operator ||')
+        let a = 15;
+        let b = 7;
+
+        if (a > 10 || b > 20) {
+            console.log("At least one condition is true");
+        } else {
+            console.log("Both conditions are false");
+        }
+        console.log('logical operator !')
+        let loggedIn = false;
+
+        if (!loggedIn) {
+            console.log("User is not logged in");
+        } else {
+            console.log("User is logged in");
+        }
+        console.log('coparison operator ? => ternary operator  ')
+
+        let isEven = 10 % 2 === 0 ? true : false;
+
+        console.log(isEven);
+
+    </script>
+</body>
+
+</html>
