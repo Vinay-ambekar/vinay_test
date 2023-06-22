@@ -1,0 +1,9 @@
+.array-method{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+li{
+    font-size: 25px;
+    
+}
